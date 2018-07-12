@@ -57,13 +57,6 @@ body{
   grid-template-columns: 1fr 1fr;
   font-size: 2vw;
 }
-.under-header{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5%;
-}
 
 #tabs .active {
   color: #FEFFFF;
@@ -79,25 +72,32 @@ body{
 /*Buttons*/
 
 .button {
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  font-size: 2vw;
+  text-align: center;
    background-color: rgba(0, 0, 0, .25);
    color: #FFFFFF;
-   font-size: 2vw;
-   padding: 5%;
    border: 2px solid #FEFFFF;
    cursor: pointer;
    border-radius: 5px;
-   text-align: center;
    width: 15vw;
    -webkit-appearance: button;
    -moz-appearance: button;
    appearance: button;
-   display: flex;
-   flex-direction: wrap;
    align-items: center;
    height: 100px;
-   text-align: center;
-   text-decoration: none;
+   width: auto;
    color: initial;
+}
+.under-header{
+  display: flex;
+  flex-direction: row;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
 }
 .main-container h1 {
   text-align: center;
