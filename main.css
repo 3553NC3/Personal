@@ -1,6 +1,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  color: #FFF;
 }
 html {
   position: relative;
@@ -42,11 +43,26 @@ body{
   justify-content: center;
   height: 85%
 }
-.controls{
-  display: flex;
+.header{
+  width: 100%;
+  padding: 5%;
+  text-align: center;
+  font-size: 3vw;
+  background-color: rgba(0, 0, 0, .5);
+  background-blend-mode: multiply;
+}
+.sub-header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 2vw;
+}
+.under-header{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-content: center;
 }
-.controls button{
+.under-header button{
   font-size: 1.25vw;
+  color: black;
 }
