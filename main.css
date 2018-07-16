@@ -1,7 +1,13 @@
+* p {
+  color: #54B9EA;
+}
+* h1 {
+  color: #54B9EA;
+}
 *{
   margin: 0px;
   padding: 0px;
-  color: #FFF;
+  color: #5AB9EA;
 }
 html {
   position: relative;
@@ -15,7 +21,13 @@ body{
   height: 100%;
 }
 .cover {
-  background: url("background.png") no-repeat center fixed;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5680e9+0,8860d0+100 */
+background: #5680e9; /* Old browsers */
+background: -moz-linear-gradient(45deg, #5680e9 0%, #8860d0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #5680e9 0%,#8860d0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #5680e9 0%,#8860d0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5680e9', endColorstr='#8860d0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  /*background: url("background.png") no-repeat center fixed;*/
   background-size: cover;
 }
 #tabs{
@@ -26,8 +38,8 @@ body{
 }
 .nav-item a{
   font-size: 2vw;
-  color: #FFF;
   text-decoration: none;
+  color: #5AB9EA;
 }
 .main-container{
   width: 100%;
@@ -35,7 +47,7 @@ body{
 }
 .main-container h1{
   text-align: center;
-  color: #FFF;
+  color: #5AB9EA;
   font-size: 4vw;
 }
 .align-center{
@@ -59,12 +71,12 @@ body{
 }
 
 #tabs .active {
-  color: #FEFFFF;
+  color: #5AB9EA;
   text-align: center;
   padding: 5%;
   text-decoration: none;
   font-size: 45px;
-  border: 5px solid #FEFFFF;
+  border: 5px solid #5AB9EA;
   border-radius: 5px;
 }
 
@@ -74,9 +86,10 @@ body{
   padding: 5%;
   font-size: 2vw;
   text-align: center;
+  text-decoration-color: #5AB9EA;
    background-color: rgba(0, 0, 0, .25);
-   color: #FFFFFF;
-   border: 5px solid #FEFFFF;
+   color: #5AB9EA;
+   border: 5px solid #5AB9EA;
    cursor: pointer;
    border-radius: 5px;
    width: 15vw;
@@ -86,7 +99,6 @@ body{
    align-items: center;
    height: 100px;
    width: auto;
-   color: white;
 }
 .under-header{
   display: grid;
@@ -96,6 +108,7 @@ body{
   justify-content: center;
   margin-top: 5%;
   margin-bottom: -8%;
+  color: #5AB9EA;
 }
 .col2{
   display: grid;
@@ -106,7 +119,7 @@ body{
   text-align: center;
   font-size: 5vw;
   font-weight: 900;
-  color: #FEFFFF;
+  color: #5AB9EA;
 }
 
 /*Profile*/
@@ -133,6 +146,10 @@ body{
 .fa-linkedin {
     font-size: 80px;
     padding-right: 40px;
+}
+.fa-envelope {
+  font-size: 80px;
+  padding-right: 40px;
 }
 a {
     text-decoration: none;
@@ -190,11 +207,11 @@ button:hover, a:hover {
   padding: 2% 5%;
 }
 #hobbies {
-  background-color: rgba(0,0,0,0.5);
   padding: 2% 5%;
 }
 #hobbies h1 {
   font-size: 40px;
+  text-align: left;
 }
 #hobbies p {
   font-size: 30px;
@@ -202,8 +219,10 @@ button:hover, a:hover {
 #hobbies ul li {
   font-size: 30px;
   margin-left: -20px;
+  text-align: left;
 }
-#card ul li {
-    font-size: 40px;
-    margin-left: -20px;
+.about {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
 }
