@@ -23,17 +23,13 @@ body{
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
   transform: translateY(100%);
-  border: 2px solid black;
-  /*padding-bottom: 50px;
-  padding-top: 10px;*/
-  margin-bottom: auto;
 }
 #tabs .active {
   color: #5AB9EA;
   text-align: center;
   padding: 5%;
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 45px;
   border: 4px solid #5AB9EA;
   border-radius: 5px;
 }
